@@ -1,16 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Laba_2_sasha</title>
-    <link rel="stylesheet" type="text/css"
-          href="http://yegor256.github.io/tacit/tacit.min.css"/>
+    <title>JavaScript authentication</title>
+    <link rel="stylesheet" type="text/css" href="http://yegor256.github.io/tacit/tacit.min.css"/>
 </head>
 <body>
-<div><input type="text" id="name" placeholder="username" required="required"></div>
-<div><input type="password" id="password" placeholder="password" required="required"></div>
-<div>
-    <button id="LogIn">Log In</button>
-</div>
+
+<form name="loginForm">
+    <table style="margin: 0 auto;width: 350px;">
+        <tr>
+            <td><label for="name">Username</label></td>
+            <td><input type="text" id="name" required="required"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" id="password" required="required"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center"><button id="loginBtn">Log In</button></td>
+        </tr>
+    </table>
+</form>
+
 <script src="logic.js"></script>
 </body>
 </html>
