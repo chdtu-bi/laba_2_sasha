@@ -21,3 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
+
+const aaSnowConfig = {
+    snowflakes: 200
+};
